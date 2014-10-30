@@ -1,0 +1,11 @@
+## Dependency directories
+bower_components/
+node_modules/
+
+## Built files
+built/
+option-tree/
+*.zip
+
+## OS files
+.DS_Store

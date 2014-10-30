@@ -1,0 +1,71 @@
+//
+// Carousel
+// --------------------------------------------------
+
+@carousel-width: 350px;
+
+.carousel-wrapper {
+  .img-thumbnail;
+
+  width: 100%;
+  height: @carousel-width + 10;
+  margin-bottom: @line-height-computed;
+}
+
+.carousel-home {
+  margin-bottom: @line-height-computed;
+
+  .item {
+    width: 100%;
+    height: @carousel-width;
+    background-position: center center;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+  }
+
+  .carousel-caption {
+    font-size: 80%;
+
+    a {
+      color: #fff;
+
+      &:hover,
+      &:focus {
+        color: #eee;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .carousel-control {
+    .icon-prev,
+    .icon-next,
+    .fa-chevron-left,
+    .fa-chevron-right {
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      display: inline-block;
+      font-size: 30px;
+    }
+    .icon-prev,
+    .fa-chevron-left {
+      left: 50%;
+      margin-left: -15px;
+    }
+    .icon-next,
+    .fa-chevron-right {
+      right: 50%;
+      margin-right: -15px;
+    }
+    .icon-prev,
+    .icon-next {
+      width:  30px;
+      height: 30px;
+      margin-top: -15px;
+      font-family: serif;
+    }
+  }
+}

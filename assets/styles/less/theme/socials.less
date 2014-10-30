@@ -1,0 +1,45 @@
+.socials {
+  .list-inline;
+
+  position: absolute;
+  top: @line-height-computed;
+  right: @line-height-computed;
+
+  li {
+    padding-left: 0;
+    font-size: 130%;
+
+    & > a {
+      .text-center;
+      .box-shadow(-1px 1px 3px 0px rgba(0, 0, 0, 0.4));
+      .transition(background-color .3s ease-in);
+
+      display: block;
+      height: 35px;
+      width: 35px;
+      background-color: @gray-darker;
+      color: #fff;
+      border-radius: 100px;
+
+      &:focus, &:hover {
+        .transition(background-color .3s ease-out);
+      }
+    }
+
+    &.facebook a:focus, &.facebook a:hover {
+      background-color: #3b5998;
+    }
+
+    &.twitter a:focus, &.twitter a:hover {
+      background-color: #00aced;
+    }
+
+    &.google a:focus, &.google a:hover {
+      background-color: #dd4b39;
+    }
+
+    &.youtube a:focus, &.youtube a:hover {
+      background-color: #bb0000;
+    }
+  }
+}

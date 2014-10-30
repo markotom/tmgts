@@ -1,0 +1,31 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: @navbar-height + 6px;
+
+  &.admin-bar {
+    padding-top: 10px;
+
+    @media (min-width:  782px) {
+      padding-top: @navbar-height + 6px;
+    }
+  }
+
+}
+
+a {
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+img.wp-smiley {
+  display: inline !important;
+}

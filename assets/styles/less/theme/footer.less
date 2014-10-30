@@ -1,0 +1,59 @@
+//
+// Footer
+// --------------------------------------------------
+
+#menu-footer {
+  margin-bottom: @line-height-computed * 2;
+  font-size: 90%;
+
+  li + li {
+    margin-left: @line-height-computed;
+  }
+
+  > .current-menu-item a {
+    color: @gray-lighter;
+  }
+}
+
+#footer {
+  color: @gray;
+  background-color: @gray-darker;
+
+  .container {
+    padding-top: @line-height-computed;
+    padding-bottom: @line-height-computed;
+  }
+
+  a {
+    color: @gray-light;
+
+    &:hover,
+    &:focus {
+      color: @gray-lighter;
+    }
+  }
+}
+
+.toup {
+  .text-center;
+  .opacity(0.5);
+
+  display: block;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  right: @line-height-computed;
+  bottom: @line-height-computed;
+  background-color: @gray-base;
+  font-size: 150%;
+  color: white;
+
+  &, &:focus, &:hover {
+    color: white;
+  }
+
+  &:focus, &:hover {
+    .opacity(1);
+  }
+}

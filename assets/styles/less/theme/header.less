@@ -1,0 +1,49 @@
+//
+// Header
+// --------------------------------------------------
+
+#header {
+  z-index: 999;
+  background-color: darken(@brand-primary, 10%);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment:fixed;
+  background-size: cover;
+  color: @gray-lighter;
+
+  .container {
+    position: relative;
+    padding-top: @line-height-computed * 3;
+    padding-bottom: @line-height-computed * 3;
+  }
+
+  .site-name a,
+  .text-subheading {
+    color: @gray-lighter;
+  }
+
+  .site-name {
+    .h2;
+  }
+
+  .text-subheading {
+    .h4;
+  }
+
+  .site-name, .text-subheading {
+    text-shadow: 0 1px 3px rgba(0,0,0,.6);
+  }
+}
+
+.page-title {
+  .h4;
+  .text-muted;
+
+  margin-bottom: @line-height-computed;
+}
+
+#main {
+  min-height: @line-height-computed * 20;
+  padding-top: @line-height-computed;
+  padding-bottom: @line-height-computed * 3;
+}

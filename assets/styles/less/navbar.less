@@ -1,0 +1,14 @@
+//
+// Navbars
+// --------------------------------------------------
+
+.navbar {
+  border-width: 0;
+}
+
+// Navbar nav links
+.navbar-nav {
+  > .current-menu-item {
+    &:extend(.navbar-nav > .active all);
+  }
+}
