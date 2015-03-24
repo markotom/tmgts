@@ -48,6 +48,12 @@
 
   <?php
     $heading_image = ot_get_option( 'tmgts_heading_image' );
+
+    if ( function_exists('has_post_thumbnail') && has_post_thumbnail($post->ID) ) {
+      $attachment_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumb-large' );
+      $heading_image = $attachment_image[0];
+    }
+
     $heading_image = $heading_image ? 'background-image: url(' . $heading_image . ');' : '';
   ?>
 

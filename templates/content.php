@@ -6,11 +6,6 @@
 
     <!-- .entry-header -->
     <header class="entry-header">
-
-      <?php if ( is_single() ) : ?>
-      <?php tmgts_post_thumbnail(); ?>
-      <?php endif; ?>
-
       <?php if ( ! is_single() ) : ?>
       <!-- .entry-meta.entry-meta-top -->
       <div class="entry-meta entry-meta-top">
